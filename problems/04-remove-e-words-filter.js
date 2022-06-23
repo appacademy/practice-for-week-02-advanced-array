@@ -14,6 +14,12 @@ console.log(removeEWords('Enter the building')); // 'building'
 
 let removeEWords = function(sentence) {
     // Your code here
+    let words = sentence.split(" ");
+    return words.filter(
+      function(word){
+         return (!word.toLowerCase().includes("e"))
+      }
+    ).join(" ");
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
@@ -22,4 +28,4 @@ try {
   module.exports = removeEWords;
 } catch (e) {
   module.exports = null;
-}
+}
