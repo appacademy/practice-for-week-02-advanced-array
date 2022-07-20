@@ -11,8 +11,11 @@ console.log(tripler([2, 7, 4])); // [ 6, 21, 12 ]
 console.log(tripler([-5, 10, 0, 11])); // [ -15, 30, 0, 33 ]
 */
 
-let tripler = function(nums) {
-    // Your code here
+let tripler = function (nums) {
+  let tripled = nums.map(function (number) {
+    return number * 3;
+  });
+  return tripled;
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

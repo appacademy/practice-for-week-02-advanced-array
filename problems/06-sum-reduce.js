@@ -12,8 +12,11 @@ console.log(sumWithReduce([])); // 0
 
 */
 
-let sumWithReduce = function(nums) {
-  // Your code here
+let sumWithReduce = function (nums) {
+  let total = nums.reduce(function (previousValue, currentValue) {
+    return previousValue + currentValue
+  }, 0);
+  return total;
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

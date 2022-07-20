@@ -14,8 +14,11 @@ console.log(maxWithReduce([-2, -3, -7, 3])); // 3
 
 */
 
-let maxWithReduce = function(nums) {
-    // Your code here
+let maxWithReduce = function (nums) {
+  let largestNum = nums.reduce(function(previousValue, currentValue) {
+    return Math.max(previousValue, currentValue);
+  });
+  return largestNum;
 };
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
