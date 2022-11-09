@@ -16,13 +16,18 @@ console.log(productWithReduce([4, 3])); // 12
 */
 
 let productWithReduce = function(nums) {
-    // Your code here
+    let product = nums.reduce(function(accum, num) {
+      return num * accum
+    });
+    return product;
 }
 
+console.log(productWithReduce([10, 3, 5, 2])); // 300
+console.log(productWithReduce([4, 3])); // 12
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
   module.exports = productWithReduce;
 } catch (e) {
   module.exports = null;
-}
+}

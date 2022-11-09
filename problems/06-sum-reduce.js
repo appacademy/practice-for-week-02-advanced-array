@@ -13,9 +13,14 @@ console.log(sumWithReduce([])); // 0
 */
 
 let sumWithReduce = function(nums) {
-  // Your code here
-};
+  let sum = nums.reduce(function(accum, num) {
 
+    return accum + num;
+  }, 0);
+  return sum;
+};
+console.log(sumWithReduce([10, 3, 5, 2])); // 20
+console.log(sumWithReduce([])); // 0
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

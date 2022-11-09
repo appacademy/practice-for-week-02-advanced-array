@@ -14,8 +14,22 @@ console.log(avgVal([])); // null
 */
 
 let avgVal = function(arr) {
-    // Your code here
+
+  sum = 0;
+  let divideBy = arr.length;
+    if (arr.length > 0) {
+      arr.forEach(function(nums){
+        sum += nums;
+    });
+    return sum / divideBy;
+  }
+  return null;
+
 };
+
+console.log(avgVal([5, 10])); // 7.5
+console.log(avgVal([3, 7, 2, 1, 2])); // 3
+console.log(avgVal([])); // null
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
