@@ -6,8 +6,7 @@ Included are a number of array-related problems.
 Complete the problems in the order specified. You must use the Array methods
 that you've learned.
 
-You should have `mocha` installed and will need to pass all the tests in order
-to move on.
+You will need to pass all the tests in order to move on.
 
 To run the tests for the above problems you will need to unzip the file you
 downloaded.
@@ -16,13 +15,13 @@ To get started, use the following commands:
 
 1. `cd` into the project directory
 2. `npm install` to install any dependencies
-3. `mocha` to run the test cases
+3. `npm test` to run the test cases
 
-The `mocha` command will run all the tests. If you have any trouble with this
+The `npm test` command will run all the tests. If you have any trouble with this
 don't hesitate to ask a TA for help!
 
 To test only one of the test files at a time, you can run the command,
-`mocha test/<test file name>` (e.g. `mocha test/00-sum-forEach.js`),
+`npm test test/<test file name>` (e.g. `npm test test/00-sum-forEach.js`),
 where `test` is the name of the test folder. You must run this command one
 directory above the `test` directory.
 
