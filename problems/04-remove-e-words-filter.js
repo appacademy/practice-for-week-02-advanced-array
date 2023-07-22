@@ -13,13 +13,18 @@ console.log(removeEWords('Enter the building')); // 'building'
 */
 
 let removeEWords = function(sentence) {
-    // Your code here
+  words = sentence.split(' ')
+    let nonE = words.filter(function(word) {
+        return !word.includes('e');
+    });
+return nonE.join(' ');
 };
-
+console.log(removeEWords('What time is it everyone?')); // 'What is it'
+console.log(removeEWords('Enter the building')); // 'building'
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
   module.exports = removeEWords;
 } catch (e) {
   module.exports = null;
-}
+}
